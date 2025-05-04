@@ -16,14 +16,16 @@ import java.util.stream.Stream;
 @Log4j2
 public abstract class LazyModel {
 
-    @Getter
     @Builder
     @AllArgsConstructor
     @NoArgsConstructor
+    @Getter
     public static class ObjectInfo {
         private Class<?> type;
         private String attributeName;
         private Object value;
+
+
     }
 
     public List<LazyModel.ObjectInfo> extractPersistenceInfo() {

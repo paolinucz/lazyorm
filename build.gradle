@@ -15,8 +15,11 @@ dependencies {
     implementation group: 'jakarta.persistence', name: 'jakarta.persistence-api', version: '3.2.0'
     // https://mvnrepository.com/artifact/org.projectlombok/lombok
     compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.38'
+    annotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.18.38'
     // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
     implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.24.3'
+    // https://mvnrepository.com/artifact/org.scalameta/metaconfig-typesafe-config
+    implementation group: 'org.scalameta', name: 'metaconfig-typesafe-config_3', version: '0.15.0'
 }
 
 publishing {
